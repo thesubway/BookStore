@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'shopper/index'
+
   resources :products
+
+  # 'as' will create a “shopper_path” access method:
+  root "shopper#index", as: 'shopper'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
