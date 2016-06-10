@@ -1,13 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  product: MyString
-  references: MyString
-  cart: MyString
-  belongs_to: MyString
+  product_id: 
+  cart_id: 
 
 two:
-  product: MyString
-  references: MyString
-  cart: MyString
-  belongs_to: MyString
+  product_id: 
+  cart_id: 

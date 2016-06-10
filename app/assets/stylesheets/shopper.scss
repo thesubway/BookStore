@@ -34,6 +34,9 @@
       margin-top: 0.5em;
       margin-bottom: 0.8em;
     }
+    form, div {
+     display: inline; //button_to creates a <form> with <div> inside
+    }
     .price {
       color: #44a;
       font-weight: bold;
