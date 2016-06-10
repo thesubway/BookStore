@@ -37,6 +37,8 @@ class LineItemsController < ApplicationController
       if @line_item.save
         # format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
         format.html { redirect_to shopper_url }
+        format.js # so if the format the request specified is js, then return javascript file
+        # By default, it will look for "create template"
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
