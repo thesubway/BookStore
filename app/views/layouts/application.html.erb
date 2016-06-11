@@ -10,17 +10,20 @@
   <div id="banner">
     <%= image_tag("logo.png") %>
     <%= @page_title || "Our Products" %>
+    <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Books" %>
+    <%= submit_tag "Search" %>
+    <% end %>
   </div>
   <div id="columns">
     <div id="side">
       <div id='cart'>
-        <%= render @cart %>
       </div>
       <ul>
-        <li><a class="sideLink" href="http://www....">Home</a></li>
-        <li><a class="sideLink" href="http://www..../faq">Questions</a></li>
-        <li><a class="sideLink" href="http://www..../news">News</a></li>
-        <li><a class="sideLink" href="http://www..../contact">Contact</a></li>
+        <li><a class="sideLink" href="#">Home</a></li>
+        <li><a class="sideLink" href="#">Questions</a></li>
+        <li><a class="sideLink" href="#">News</a></li>
+        <li><a class="sideLink" href="#">Contact</a></li>
       </ul>
     </div>
     <div id="main">

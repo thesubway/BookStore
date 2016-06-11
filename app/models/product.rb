@@ -8,6 +8,10 @@ class Product < ActiveRecord::Base
   validates :image, allow_blank: true,
   format: {with: %r{\.(gif|jpg|png)\Z}i, message: 'must be GIF, JPG, PNG images'}
 
+  def self.search(search)
+    where("name LIKE ?", "%#{search}%")
+  end
+
   private
   def ensure_no_line_item_child
     if line_items.empty?
