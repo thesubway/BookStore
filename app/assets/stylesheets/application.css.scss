@@ -22,6 +22,8 @@
    text-align: center;
    img {
      float: left;
+     width: 180px;
+     height: 80px;
    }
  }
  #notice {
@@ -73,7 +75,7 @@
 .sideLink {
   color: white;
 }
-a:visited {
+.sideLink:visited {
   color: white;
 }
 .order_form {

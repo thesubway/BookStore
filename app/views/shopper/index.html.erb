@@ -1,5 +1,3 @@
-<h1>Shopper#index</h1>
-<p>Find me in app/views/shopper/index.html.erb</p>
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
@@ -12,7 +10,7 @@
     <%= sanitize(product.description) %>
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
-      <%= button_to 'Add to Cart', line_items_path(product_id: product), class: 'add_to_cart', remote:true %> 
+      <%= button_to 'Add to Cart', line_items_path(product_id: product), class: 'add_to_cart', remote:true %>
     </div>
   </div>
 <% end %>
