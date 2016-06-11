@@ -13,6 +13,10 @@ class ProductsController < ApplicationController
     end
   end
 
+  def curl_get_example
+    render text: 'Thanks for sending a GET request with cURL!'
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show
